@@ -3,6 +3,7 @@
 
 import 'dart:math';
 
+import 'package:flutter/src/material/divider.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 import 'package:simple_gesture_detector/simple_gesture_detector.dart';
@@ -472,6 +473,13 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
               );
             },
           ),
+        Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 8,
+          ),
+          child: Divider(height: 1, color: Color(0xFFF2F4F5)),
+        ),
         Flexible(
           flex: widget.shouldFillViewport ? 1 : 0,
           child: TableCalendarBase(
